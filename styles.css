@@ -6,12 +6,39 @@
 }
 
 body {
+  font-family: "Roboto", sans-serif;
   background-color: #ffffff;
   color: #090909;
 }
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+}
+/* ? Base styles */
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 0.13rem;
+  font-weight: 500;
+}
+h1 {
+  font-size: 3.2rem;
+}
+h2 {
+  font-size: 2.8rem;
+}
+h3 {
+  font-size: 2.4rem;
+}
+h4 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.13rem;
+  line-height: 2.7rem;
 }
 /* Repetitive things */
 .flex-center-childs {
@@ -28,7 +55,7 @@ html {
   height: auto;
   width: 100%;
   grid-template-columns: 1fr;
-  grid-template-rows: 30vh 60vh 10vh;
+  grid-template-rows: 30vh 65vh 5vh;
 }
 
 /* ? Styling */
@@ -38,6 +65,12 @@ html {
   color: #fff;
   background-color: #000000;
 }
+.header__text-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  text-align: center;
+}
 /* ! Main */
 .main {
   display: grid;
@@ -46,4 +79,7 @@ html {
 .footer {
   color: #fff;
   background-color: #000000;
+}
+
+@media (min-width: 540px) {
 }

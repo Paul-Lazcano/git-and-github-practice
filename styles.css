@@ -99,6 +99,10 @@ p {
   padding: 2rem;
   border: 0.1rem solid #dedede;
   border-radius: 0.8rem;
+  cursor: pointer;
+  box-shadow: 0 0 30px 5px #00000030;
+
+  transition: 300ms ease;
 }
 .card__text-container {
   width: 70%;
@@ -120,4 +124,11 @@ p {
 }
 
 @media (min-width: 540px) {
+  .card {
+    opacity: 0.5;
+  }
+  .card:hover {
+    opacity: 1;
+    box-shadow: 0 0 30px 5px #00000050;
+  }
 }

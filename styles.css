@@ -54,9 +54,8 @@ p {
   display: grid;
   min-height: 100vh;
   height: auto;
-  width: 100%;
   grid-template-columns: 1fr;
-  grid-template-rows: 30vh 100vh;
+  grid-template-rows: 30vh minmax(70vh, auto);
 }
 
 /* ? Styling */
@@ -78,19 +77,19 @@ p {
   flex-direction: column;
   justify-content: start;
   row-gap: 3rem;
-  padding: 1rem 2rem;
+  padding: 3rem 2rem;
   text-align: center;
 }
 .main__text-container {
   width: 100%;
-  padding-top: 3rem;
 }
 .cards-container {
   width: 100%;
+  max-width: 1024px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  gap: 4rem;
+  gap: 2rem;
 }
 .card {
   display: flex;
@@ -107,14 +106,15 @@ p {
 .card__img {
   display: grid;
   place-content: center;
-  height: 10rem;
+  height: 30rem;
   width: 90%;
   background-color: #f6f6f6;
 }
 /* ! Footer */
 .footer {
+  height: 10rem;
   position: sticky;
-  bottom: 0;
+  bottom: 0px;
   color: #fff;
   background-color: #000000;
 }

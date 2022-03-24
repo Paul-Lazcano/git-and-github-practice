@@ -1,1 +1,2 @@
-console.log("soy de la rama featue/logica");
+const message = "a";
+console.log(message);

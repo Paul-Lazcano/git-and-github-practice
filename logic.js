@@ -1,1 +1,2 @@
-console.log("soy otro usuario");
+const message = "a";
+console.log(message);
